@@ -1,0 +1,127 @@
+body{
+   /* Set line spacing */
+   line-height: 1.5;
+}
+
+
+header, nav{
+    margin: 20px;
+    padding: 5px 10px;
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    margin: 0 10px 0 0 ;
+    background-color: gainsboro;
+    padding: 5px;
+    font-size: large;
+}
+
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    /* Set color */
+    color: greenyellow;
+
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    color: blue;
+    text-transform: uppercase;
+}
+
+
+h1{
+   /*Set font and font size*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+h3{
+    /*Set font size*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin: 15px;
+}
+
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
+    background-color: lightgray;
+
+    @media only screen and (min-width: 1024px){
+        .grid {
+            /* Desktop-specific styles */
+            grid-template-columns: repeat(3, 1fr); /* Three equally sized columns for desktop */
+        }
+        .grid img {
+            /* Add a border to the images and ensure centering for desktop */
+            border: 1px solid #ccc; /* Example border style, customize as needed */
+            box-sizing: border-box; /* Ensure border is included in the width calculation */
+        }
+        }
+    }
+
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: 1px solid black;
+    border-radius: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    width: 90%;
+    display: block;
+    margin: 10 auto;
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+}
+    
+
+p + p {
+     /* Set indentation */
+  }
+  
+p{
+     /* Set margin */
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+}
